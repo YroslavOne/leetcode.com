@@ -28,27 +28,26 @@
 <button class="catalog_block_button" >all products</button></a>
 
 </div>
-<script>
-	function toDoBasketClose(){
-		basketClose(); 
-		checkLocalStorage();
-		console.log("ghjikj")
-	}
-	function toDoBasketOpen(productsFeatured){
-		
-		basketAdd(productsFeatured);
-		basketOpen(); 
-		console.log("ghjikj")
-	}
+<!-- <script>
+import {basketAdd, basketOpen} from './module/cardFunction.js';
+valueToDoBasket = document.getElementById("toDoBasketOpen").value
+document.getElementById("toDoBasketOpen").onclick = function (valueToDoBasket){
+  console.log("ghjikj")
+  console.log(valueToDoBasket)
+//   basketAdd(valueToDoBasket);
+  basketOpen(); 
+  
+}
+</script> -->
+<script type="module" src="js/basket.js">
 </script>
 <script src="js/menu.js">
 </script>
 <script src="js/index.js">
 </script>
-<script type="module" src="js/basket.js">
-</script>
-<script src="js/basketOpen.js">
-</script>
+
+<!-- <script src="js/basketOpen.js">
+</script> -->
 <script src="js/productLoupe.js">
 </script>
 </body>
