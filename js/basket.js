@@ -1,14 +1,22 @@
-import {
-  basketAdd,
-  checkLocalStorage,
-  quantityProduct,
-  addProductId,
-  quantityBasketProduct,
-  roundUpPrice,
-} from './module/cardFunction';
-
+import {checkLocalStorage, basketAdd, basketOpen} from './module/cardFunction.js';
 // let basketProductArray = [];
-checkLocalStorage;
+checkLocalStorage();
+
+// checkLocalStorage()
+
+function toDoBasketClose(){
+  console.log("ghjikj")
+  basketClose(); 
+  checkLocalStorage();
+}
+function toDoBasketOpen(productsFeatured){
+  console.log("ghjikj")
+  console.log(productsFeatured)
+  basketAdd(productsFeatured);
+  basketOpen(); 
+  
+}
+
 // function basketAdd(idElem) {
 //   quantityProduct(idElem);
 // }
